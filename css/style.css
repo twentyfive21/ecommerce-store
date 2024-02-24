@@ -34,3 +34,10 @@ a:hover {
   text-decoration: none;
   color: var(--e-brown);
 }
+
+.text-header{
+  font-family: var(--heading-font);
+  font-size: 1.75rem;
+  line-height: 127%;
+  font-weight: 500;
+}
