@@ -1,7 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+  :root {
+    --body-font: "Mulish", sans-serif;
+    --heading-font: "Italiana", serif;
+    --e-black:#151412;
+    --e-body-white:#F7F7F7;
+    --e-brown:#87826E;
+    --e-gray:#AEAEAE;
+    --description-dark:#36332F;
+    --navbar-white:#fff;
+    --link-color:#212529;
+}
+
 /* CSS reset  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: var(--body-font);
   }
+
+ul {
+  color: var(--description-dark);
+}
+
+a {
+  color: var(--description-dark);
+  text-decoration: none;
+  transition: 0.3s color ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--e-brown);
+}
