@@ -36,53 +36,13 @@ a:hover, li:hover  {
 }
 
 
-/* Index Nav Bar Start */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Index Nav Bar Start */
 /* Hero Section Start */
 .hero-main-container img{
   width: 100vw;
   height: 100vh;
   object-fit: cover;
   object-position: 70%;
+  -webkit-user-drag: none;
 }
 .hero-main-container {
   position: relative;
@@ -92,7 +52,7 @@ a:hover, li:hover  {
   color: var(--description-dark);
   text-decoration: none;
   border-bottom: 1px solid;
-  padding-bottom: 3px; 
+  padding-bottom: 3px;
 }
 .hero-main-container a:hover {
   color: grey;
@@ -105,18 +65,49 @@ a:hover, li:hover  {
 }
 .hero-message-container h1 {
   font-family: var(--heading-font);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .hero-message-container h2 {
   font-family: var(--body-font);
   font-weight: 200;
   font-size: 1.5rem;
+  padding-bottom: 8px;
 }
-.hero-message-container p {
-  font-family: var(--body-font);
-  padding: 10px 0px;
-}
+
 /* Hero Section End */
+
+/* Index about Start */
+.index-about-container {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 150px;
+  background-color: var(--e-body-white);
+}
+.index-about-container h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: var(--body-font);
+  color: #999999;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-bottom: 10px;
+}
+
+.index-about-container h3 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+.index-about-container p {
+  font-size: 1rem;
+  font-family: var(--body-font);
+  color: var(--description-dark);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+/* Index about End */
 
 
 /* Subscribe Section Start */
@@ -146,13 +137,9 @@ a:hover, li:hover  {
     outline: none;
     box-shadow: none;
 }
-
-
-
 /* Subscribe Section End */
 
 /* Footer section Start */
-/*===== FOOTER ONE =====*/
 .text-header{
   font-family: var(--heading-font);
   line-height: 127%;
@@ -336,6 +323,7 @@ a:hover, li:hover  {
 .footer-one .social li a:hover {
   color: var(--primary);
 }
-
-
 /* Footer Section End */
+
+
+
