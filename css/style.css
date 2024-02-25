@@ -35,7 +35,12 @@ a:hover {
   color: var(--e-brown);
 }
 
-
+.text-header{
+  font-family: var(--heading-font);
+  font-size: 1.75rem;
+  line-height: 127%;
+  font-weight: 500;
+}
 
 /* Index Nav Bar Start */
 
@@ -117,5 +122,4 @@ a:hover {
   font-family: var(--body-font);
   padding: 10px 0px;
 }
-
 /* Hero Section End */
