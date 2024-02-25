@@ -41,3 +41,85 @@ a:hover {
   line-height: 127%;
   font-weight: 500;
 }
+
+/* Index Nav Bar Start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Index Nav Bar Start */
+/* Hero Section Start */
+.hero-main-container img{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: 70%;
+}
+.hero-main-container {
+  position: relative;
+  color: var(--description-dark);
+}
+.hero-main-container a {
+  color: var(--description-dark);
+  text-decoration: none;
+  border-bottom: 1px solid;
+  padding-bottom: 3px; 
+}
+.hero-main-container a:hover {
+  color: grey;
+}
+.hero-message-container {
+  position: absolute;
+  top: 37%;
+  left: 10%;
+  padding-right: 30px;
+}
+.hero-message-container h1 {
+  font-family: var(--heading-font);
+  font-size: 3rem;
+}
+.hero-message-container h2 {
+  font-family: var(--body-font);
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.hero-message-container p {
+  font-family: var(--body-font);
+  padding: 10px 0px;
+}
+/* Hero Section End */
