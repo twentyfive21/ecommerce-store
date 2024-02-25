@@ -11,31 +11,51 @@
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-md bg-body-tertiary">
-      <div class="container-fluid">
-         <a class="navbar-brand" href="./index.html">Ethereal</a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse text-center" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-               <li class="nav-item">
-                  <a class="nav-link" href="./index.html">Home</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="./shop.html">Shop</a>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="./cart.html">Cart</a>
-               </li>
-            </ul>
-         </div>
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <h1 class="navbar-brand text-header fs-4">Ethereal</h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title text-header" id="offcanvasNavbarLabel">Ethereal</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-   </nav>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+         <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/twentyfive21/ecommerce-store" target="_blank">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./shop.html">Products</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link" href="./cart.html">Cart</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./about.html">FAQ</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="./about.html">Subscribe to Newsletter</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
 
    <section class="h-100">
       <p class="m-5">ff</p>

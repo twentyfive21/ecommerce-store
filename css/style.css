@@ -35,6 +35,31 @@ a:hover, li:hover  {
   color: var(--e-brown);
 }
 
+.sidebar {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 250px;
+      padding: 15px;
+      background-color: #f8f9fa;
+      border-right: 1px solid #dee2e6;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-toggler {
+        display: block !important;
+      }
+      .navbar-expand .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .sidebar {
+        display: block;
+      }
+    }
+
 
 /* Hero Section Start */
 .hero-main-container {
@@ -48,7 +73,7 @@ a:hover, li:hover  {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(121, 119, 119, 0.4);
   z-index: 1;
 }
 
