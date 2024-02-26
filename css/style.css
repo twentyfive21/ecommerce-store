@@ -30,11 +30,14 @@ a {
   transition: 0.3s color ease-out;
 }
 
+
 a:hover, li:hover  {
   text-decoration: none;
   color: var(--e-brown);
 }
 
+
+/* NavBar Section Start */
 .sidebar {
       display: none;
       position: fixed;
@@ -47,18 +50,15 @@ a:hover, li:hover  {
       border-right: 1px solid #dee2e6;
     }
 
-    @media (max-width: 768px) {
-      .navbar-toggler {
-        display: block !important;
-      }
-      .navbar-expand .navbar-nav .nav-link {
-        padding-right: 0;
-        padding-left: 0;
-      }
-      .sidebar {
-        display: block;
-      }
+    .navbar-toggler:focus {
+      outline: none !important;
+      box-shadow: none !important;
     }
+
+  .custom-navbar-bg-light{
+    background-color: #FAF9F6;
+  }
+/* NavBar Section End */
 
 
 /* Hero Section Start */
@@ -161,6 +161,176 @@ a:hover, li:hover  {
 /* Index about End */
 
 
+/* Image slider Items Start */
+/* Style the slider container to control the slider's visibility and positioning */
+.slider-header{
+font-family: var(--heading-font);
+}
+
+.best-selling-arrows {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px; /* Adjust the space between buttons */
+  align-items: center;
+}
+button svg {
+  width: 34px; /* Adjust the width to make the icon bigger */
+  height: 34px; /* Adjust the height to make the icon bigger */
+}
+
+.all-items-hover{
+  color: var(--e-black);
+  border-bottom: 2px solid var(--e-black);
+}
+
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+/* Format the slider element to align the slides properly */
+.slider {
+    display: flex;
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 75%;
+    height:auto;
+}
+
+/* Style the slide elements to make them responsive and visually appealing */
+.slide {
+    flex: 0 0 calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    height: auto;
+}
+
+/* Style the images and headers within the slide elements */
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.slide h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/* Style the slide elements to make them responsive and visually appealing */
+.slide {
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+    flex: 0 0 calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    height: auto;
+    overflow: hidden; /* Ensure image doesn't overflow */
+}
+
+/* Style the images within the slide elements */
+.slide img {
+    width: 100%;
+    height: 100%; /* Make sure the image height adjusts according to its width */
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.5s ease; /* Apply transition for transform */
+}
+
+/* Zoom in effect on hover */
+.slide:hover img {
+    transform: scale(1.05); /* Zoom in to 105% of original size */
+}
+
+/* Style the "View Item" text */
+.view-item {
+    opacity: 0; /* Hide initially */
+    position: absolute;
+    bottom: 150px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid var(--description-dark);
+    color: var(--description-dark); /* Ensuring text is visible */
+    padding: 0.5rem; /* Add some padding */
+    transition: opacity 0.5s ease; /* Apply transition for opacity */
+}
+
+/* Apply hover effect to the slide element */
+.slide:hover .view-item {
+    opacity: 1; /* Show on hover */
+}
+
+/* Add a transition effect for smoother hover animation */
+.slide .view-item {
+    transition: opacity 0.5s ease; /* Apply transition for opacity */
+}
+
+
+.slide-product-text{
+  color: #212529;
+  text-decoration: none;
+  transition: 0.3s color ease-out;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.slide-product-price{
+  color: var(--e-brown);
+  font-size: 1.375rem !important;
+  font-weight: 300 !important;
+}
+
+/* Media queries to adjust the slider's layout based on the viewport width */
+@media (max-width: 1024px) {
+    .slide {
+        flex: 0 0 calc(100% / 2);
+    }
+}
+
+@media (max-width: 767px) {
+    .slide {
+        flex: 1 0 100%;
+    }
+}
+
+
+/* Image slider Items END */
+
+/* FAQ Section Start */
+
+.faq-header{
+  font-weight: 500;
+  font-family: var(--heading-font);
+  font-size: 48px;
+}
+
+.faq-description{
+  font-family: var(--heading-font);
+}
+
+
+/* FAQ Section End */
+
 /* Subscribe Section Start */
 .subscribe-header{
   font-size: 4.5rem;
@@ -207,18 +377,7 @@ a:hover, li:hover  {
   padding-top: 70px;
   padding-bottom: 100px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .footer-one .footer-widget {
-    padding-top: 40px;
-    padding-bottom: 70px;
-  }
-}
-@media (max-width: 767px) {
-  .footer-one .footer-widget {
-    padding-top: 20px;
-    padding-bottom: 50px;
-  }
-}
+
 .footer-one .footer-title {
   font-size: 18px;
   font-weight: 600;
@@ -243,29 +402,7 @@ a:hover, li:hover  {
 .footer-one .footer-app-store li img {
   max-width: 140px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .footer-one .footer-app-store li {
-    margin-right: 6px;
-  }
-}
-.footer-one .footer-app-store li:last-child {
-  margin-right: 0;
-}
-@media (max-width: 767px) {
-  .footer-one .footer-app-store li {
-    width: 120px;
-    display: block;
-    margin-bottom: 10px;
-  }
-  .footer-one .footer-app-store li:last-child {
-    margin: 0;
-  }
-}
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .footer-one .footer-app-store li {
-    width: auto;
-  }
-}
+
 .footer-one .footer-app-store li a {
   -webkit-transition: all 0.2s ease-out 0s;
   -moz-transition: all 0.2s ease-out 0s;
@@ -287,11 +424,7 @@ a:hover, li:hover  {
 .footer-one .f-about .text {
   margin-top: 20px;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
-  .footer-one .f-about {
-    padding-right: 200px;
-  }
-}
+
 .footer-one .footer-link {
   margin-top: 30px;
 }
@@ -309,11 +442,6 @@ a:hover, li:hover  {
   -ms-transition: all 0.3s ease-out 0s;
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
-}
-@media (max-width: 767px) {
-  .footer-one .footer-link ul a {
-    margin-top: 12px;
-  }
 }
 
 .footer-one .footer-link ul a:hover {
@@ -377,4 +505,72 @@ a:hover, li:hover  {
 /* Footer Section End */
 
 
+/* Media Queries Section Start*/
+
+/**Navbar Section **/
+@media (max-width: 768px) {
+      .navbar-toggler {
+        display: block !important;
+      }
+      .navbar-expand .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 0;
+      }
+      .sidebar {
+        display: block;
+      }
+    }
+
+/** Footer Section **/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-one .footer-widget {
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .footer-one .footer-widget {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer-one .footer-app-store li {
+    margin-right: 6px;
+  }
+}
+.footer-one .footer-app-store li:last-child {
+  margin-right: 0;
+}
+@media (max-width: 767px) {
+  .footer-one .footer-app-store li {
+    width: 120px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer-one .footer-app-store li:last-child {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .footer-one .footer-app-store li {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 1400px) {
+  .footer-one .f-about {
+    padding-right: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-one .footer-link ul a {
+    margin-top: 12px;
+  }
+}
+
+
+/* Media Queries Section End */
 
