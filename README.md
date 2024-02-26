@@ -33,7 +33,8 @@
 # Acknowledgments
 #### This project is an educational exercise, and all content, including images and text. We do not claim ownership of any of the content. 
 
-* Photos & SIte design ideas from : [Site](https://demo.templatesjungle.com/vaso/index.html)
+* Photos & Site design ideas from : [Site](https://demo.templatesjungle.com/vaso/index.html)
+* Hero Number Two : Photo by [Joshua Mnkhondya:] (https://www.pexels.com/photo/window-display-of-a-clothing-store-19546139/)
 * Confetti package :  https://www.npmjs.com/package/js-confetti
 
 * Note: To run the project locally, clone the repository and open the index.html file in your preferred web browser. Feel free to contribute, provide feedback, or report issues through the project's repository. Happy coding!
