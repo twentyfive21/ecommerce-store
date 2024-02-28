@@ -230,7 +230,7 @@ button svg {
     position: relative;
     overflow: hidden;
     width: 100%;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
 }
 
 /* Format the slider element to align the slides properly */

@@ -22,7 +22,7 @@
         } else if (window.innerWidth <= 1024) {
             slidesToShow = 2;
         } else {
-            slidesToShow = 3;
+            slidesToShow = 4;
         }
         // Calculate the width of each slide as a percentage based on the number of visible slides.
         slideWidth = 100 / slidesToShow;
