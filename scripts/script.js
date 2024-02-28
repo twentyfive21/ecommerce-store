@@ -12,7 +12,7 @@
     // Initialize variables for the current slide index, slide width, and number of slides to show.
     let slideIndex = 0;
     let slideWidth = 0;
-    let slidesToShow = 3;
+    let slidesToShow = 4;
 
     // Define a function to calculate the width of each slide based on the viewport width.
     const calculateSlideWidth = () => {
