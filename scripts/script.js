@@ -65,3 +65,4 @@
     // Calculate the initial slide width based on the viewport width.
     calculateSlideWidth();
 })();
+
