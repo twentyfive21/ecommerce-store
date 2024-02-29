@@ -1,24 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Italiana&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-  :root {
-    --body-font: "Mulish", sans-serif;
-    --heading-font: "Italiana", serif;
-    --e-black:#151412;
-    --e-body-white:#F7F7F7;
-    --e-brown:#87826E;
-    --e-gray:#AEAEAE;
-    --description-dark:#36332F;
-    --navbar-white:#fff;
-    --link-color:#212529;
+:root {
+  --body-font: "Mulish", sans-serif;
+  --heading-font: "Italiana", serif;
+  --e-black: #151412;
+  --e-body-white: #F7F7F7;
+  --e-brown: #87826E;
+  --e-gray: #AEAEAE;
+  --description-dark: #36332F;
+  --navbar-white: #fff;
+  --link-color: #212529;
 }
 
 /* CSS reset  */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--body-font);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
 
 ul {
   color: var(--description-dark);
@@ -31,7 +31,7 @@ a {
 }
 
 
-a:hover, li:hover  {
+a:hover, li:hover {
   text-decoration: none;
   color: var(--e-brown);
 }
@@ -39,32 +39,37 @@ a:hover, li:hover  {
 
 /* NavBar Section Start */
 .sidebar {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 250px;
-      padding: 15px;
-      background-color: #f8f9fa;
-      border-right: 1px solid #dee2e6;
-    }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+}
 
-    .navbar-toggler:focus {
-      outline: none !important;
-      box-shadow: none !important;
-    }
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
 
-  .custom-navbar-bg-light{
-    background-color: #FAF9F6;
-  }
+.custom-navbar-bg-light {
+  background-color: #FAF9F6;
+}
+
+.navbar-heading {
+  font-family: var(--heading-font);
+}
+
 /* NavBar Section End */
 
 
 /* Hero Section Start */
 .hero-main-container {
   position: relative;
-  height: 100vh;
+  height: 95vh;
 }
 
 .hero-main-container::before {
@@ -74,16 +79,18 @@ a:hover, li:hover  {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(121, 119, 119, 0.5);
+  background: rgba(134, 113, 113, 0.5);
+  background: rgba(86, 68, 68, 0.5);
   z-index: 1;
 }
+
 .first-hero-image {
   width: 100%;
-  height: 100%;
+  height: 95vh;
   background-image: url('/images/main-hero.jpeg');
   background-size: cover;
   background-position: 50% 0;
-  background-attachment: fixed; 
+  background-attachment: fixed;
 }
 
 .hero-main-container {
@@ -99,7 +106,7 @@ a:hover, li:hover  {
 }
 
 .hero-main-container a:hover {
-  color: grey;
+  color: var(--e-gray);
 }
 
 .hero-message-container {
@@ -135,6 +142,7 @@ a:hover, li:hover  {
   padding: 50px 150px;
   background-color: var(--e-body-white);
 }
+
 .index-about-container h2 {
   text-transform: uppercase;
   font-size: 1rem;
@@ -150,6 +158,7 @@ a:hover, li:hover  {
   font-size: 2.3rem;
   padding-bottom: 10px;
 }
+
 .index-about-container p {
   font-size: 1rem;
   font-family: var(--body-font);
@@ -157,51 +166,83 @@ a:hover, li:hover  {
   font-weight: 300;
   letter-spacing: 1px;
 }
+
 /* Index about End */
 
 /* Second Hero Index Start */
 .second-hero-container {
   height: 50vh;
 }
+
 .scrolling-image {
   width: 100%;
   height: 100%;
   background-image: url('/images/hero-two.jpg');
   background-size: cover;
   background-position: 50% 0;
-  background-attachment: fixed; 
+  background-attachment: fixed;
   /* Keeps the background fixed while scrolling */
 }
+
 /* Second Hero Index End*/
 
 /* Categories Index Start */
-.shopping-categories-container{
+.shopping-categories-container {
   display: flex;
   justify-content: center;
 }
+
 .category-main-box {
   background-color: tan;
   position: relative;
 }
+
 .category-main-box img {
   width: 100%;
   object-fit: cover;
 }
+
 .category-left-box img {
   height: 100%;
 }
+
 .category-label-box {
- position: absolute;
- top: 60%;
- left: 10%;
- color: white;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  color: white;
 }
+
 /* Categories Index End */
+
+/* Single Page HERO section Start */
+.page-hero-header{
+  font-family: var(--heading-font);
+}
+
+.page-hero-icon{
+  color: var(--e-brown);
+}
+
+.page-description-icon{
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1.125rem;
+  font-weight: 300;
+  color: #36332F;
+}
+
+.page-title-about{
+  color: #999999;
+  letter-spacing: 0.14em;
+}
+
+/* Single Page HERO section END */
 
 /* Image slider Items Start */
 /* Style the slider container to control the slider's visibility and positioning */
-.slider-header{
-font-family: var(--heading-font);
+.slider-header {
+  font-family: var(--heading-font);
 }
 
 .best-selling-arrows {
@@ -211,119 +252,135 @@ font-family: var(--heading-font);
 
 .buttons-container {
   display: flex;
-  gap: 10px; /* Adjust the space between buttons */
+  gap: 10px;
+  /* Adjust the space between buttons */
   align-items: center;
 }
+
 button svg {
-  width: 34px; /* Adjust the width to make the icon bigger */
-  height: 34px; /* Adjust the height to make the icon bigger */
+  width: 34px;
+  /* Adjust the width to make the icon bigger */
+  height: 34px;
+  /* Adjust the height to make the icon bigger */
 }
 
-.all-items-hover{
+.all-items-hover {
   color: var(--e-black);
   border-bottom: 2px solid var(--e-black);
 }
 
 
 .slider-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* border: 1px solid #ccc; */
 }
 
 /* Format the slider element to align the slides properly */
 .slider {
-    display: flex;
-    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    width: 75%;
-    height:auto;
+  display: flex;
+  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  width: 75%;
+  height: auto;
 }
 
 /* Style the slide elements to make them responsive and visually appealing */
 .slide {
-    flex: 0 0 calc(100% / 3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    height: auto;
+  flex: 0 0 calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  height: auto;
 }
 
 /* Style the images and headers within the slide elements */
 .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .slide h3 {
-    margin-top: 1rem;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #333;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
 }
 
 /* Style the slide elements to make them responsive and visually appealing */
 .slide {
-    position: relative; /* Needed for absolute positioning of pseudo-element */
-    flex: 0 0 calc(100% / 3);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    height: auto;
-    overflow: hidden; /* Ensure image doesn't overflow */
+  position: relative;
+  /* Needed for absolute positioning of pseudo-element */
+  flex: 0 0 calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  height: auto;
+  overflow: hidden;
+  /* Ensure image doesn't overflow */
 }
 
 /* Style the images within the slide elements */
 .slide img {
-    width: 100%;
-    height: 100%; /* Make sure the image height adjusts according to its width */
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.5s ease; /* Apply transition for transform */
+  width: 100%;
+  height: 100%;
+  /* Make sure the image height adjusts according to its width */
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+  /* Apply transition for transform */
 }
 
 /* Zoom in effect on hover */
 .slide:hover img {
-    transform: scale(1.05); /* Zoom in to 105% of original size */
+  transform: scale(1.05);
+  /* Zoom in to 105% of original size */
 }
 
 /* Style the "View Item" text */
 .view-item {
-    opacity: 0; /* Hide initially */
-    position: absolute;
-    bottom: 150px; /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid var(--description-dark);
-    color: var(--description-dark); /* Ensuring text is visible */
-    padding: 0.5rem; /* Add some padding */
-    transition: opacity 0.5s ease; /* Apply transition for opacity */
+  opacity: 0;
+  /* Hide initially */
+  position: absolute;
+  bottom: 150px;
+  /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid var(--description-dark);
+  color: var(--description-dark);
+  /* Ensuring text is visible */
+  padding: 0.5rem;
+  /* Add some padding */
+  transition: opacity 0.5s ease;
+  /* Apply transition for opacity */
 }
 
 /* Apply hover effect to the slide element */
 .slide:hover .view-item {
-    opacity: 1; /* Show on hover */
+  opacity: 1;
+  /* Show on hover */
 }
 
 /* Add a transition effect for smoother hover animation */
 .slide .view-item {
-    transition: opacity 0.5s ease; /* Apply transition for opacity */
+  transition: opacity 0.5s ease;
+  /* Apply transition for opacity */
 }
 
 
-.slide-product-text{
+.slide-product-text {
   color: #212529;
   text-decoration: none;
   transition: 0.3s color ease-out;
@@ -331,7 +388,7 @@ button svg {
   font-size: 24px;
 }
 
-.slide-product-price{
+.slide-product-price {
   color: var(--e-brown);
   font-size: 1.375rem !important;
   font-weight: 300 !important;
@@ -339,15 +396,15 @@ button svg {
 
 /* Media queries to adjust the slider's layout based on the viewport width */
 @media (max-width: 1024px) {
-    .slide {
-        flex: 0 0 calc(100% / 2);
-    }
+  .slide {
+    flex: 0 0 calc(100% / 2);
+  }
 }
 
 @media (max-width: 767px) {
-    .slide {
-        flex: 1 0 100%;
-    }
+  .slide {
+    flex: 1 0 100%;
+  }
 }
 
 
@@ -355,13 +412,13 @@ button svg {
 
 /* FAQ Section Start */
 
-.faq-header{
+.faq-header {
   font-weight: 500;
   font-family: var(--heading-font);
   font-size: 48px;
 }
 
-.faq-description{
+.faq-description {
   font-family: var(--heading-font);
 }
 
@@ -369,14 +426,14 @@ button svg {
 /* FAQ Section End */
 
 /* Subscribe Section Start */
-.subscribe-header{
+.subscribe-header {
   font-size: 4.5rem;
   font-family: var(--heading-font);
   text-transform: capitalize;
   color: var(--e-black);
 }
 
-.subscribe-text{
+.subscribe-text {
   text-transform: none;
   letter-spacing: normal;
   font-size: 1.125rem;
@@ -387,18 +444,19 @@ button svg {
 }
 
 .sub-input::placeholder {
-    color: #AEAEAE;
-    font-size: 16px;
+  color: #AEAEAE;
+  font-size: 16px;
 }
 
 .sub-input:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
+
 /* Subscribe Section End */
 
 /* Footer section Start */
-.text-header{
+.text-header {
   font-family: var(--heading-font);
   line-height: 127%;
   font-weight: 500;
@@ -407,9 +465,11 @@ button svg {
 .footer-one {
   background-color: var(--light-2);
 }
+
 .footer-one .footer-logo {
   margin-top: 30px;
 }
+
 .footer-one .footer-widget {
   padding-top: 70px;
   padding-bottom: 100px;
@@ -422,9 +482,11 @@ button svg {
   color: var(--black);
   position: relative;
 }
+
 .footer-one .footer-app-store {
   padding-top: 22px;
 }
+
 .footer-one .footer-app-store .download-title {
   font-size: 15px;
   display: block;
@@ -432,10 +494,12 @@ button svg {
   font-weight: 500;
   color: var(--dark-1);
 }
+
 .footer-one .footer-app-store li {
   display: inline-block;
   margin-right: 8px;
 }
+
 .footer-one .footer-app-store li img {
   max-width: 140px;
 }
@@ -447,6 +511,7 @@ button svg {
   -o-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
 }
+
 .footer-one .footer-app-store li a:hover {
   box-shadow: var(--shadow-4);
   -webkit-transform: translateY(-4px);
@@ -455,9 +520,11 @@ button svg {
   -o-transform: translateY(-4px);
   transform: translateY(-4px);
 }
+
 .footer-one .f-about {
   margin-top: 30;
 }
+
 .footer-one .f-about .text {
   margin-top: 20px;
 }
@@ -465,9 +532,11 @@ button svg {
 .footer-one .footer-link {
   margin-top: 30px;
 }
+
 .footer-one .footer-link ul {
   margin-top: 8px;
 }
+
 .footer-one .footer-link ul a {
   font-size: 16px;
   line-height: 24px;
@@ -484,12 +553,15 @@ button svg {
 .footer-one .footer-link ul a:hover {
   color: var(--primary);
 }
+
 .footer-one .footer-contact {
   margin-top: 30px;
 }
+
 .footer-one .footer-contact ul {
   margin-top: 24px;
 }
+
 .footer-one .footer-contact ul li {
   display: block;
   margin-top: 15px;
@@ -497,36 +569,45 @@ button svg {
   padding-left: 24px;
   color: var(--dark-3);
 }
+
 .footer-one .footer-contact ul li:first-child {
   margin: 0;
 }
+
 .footer-one .footer-contact ul li i {
   font-size: 18px;
   position: absolute;
   left: 0;
   top: 4px;
 }
+
 .footer-one .footer-copyright {
   border-top: 1px solid var(--gray-4);
 }
+
 .footer-one .copyright {
   padding-bottom: 23px;
   padding-top: 13px;
 }
+
 .footer-one .copyright .text {
   color: var(--dark-3);
   margin-top: 10px;
 }
+
 .footer-one .social {
   margin-top: 10px;
 }
+
 .footer-one .social li {
   display: inline-block;
   margin-right: 15px;
 }
+
 .footer-one .social li:last-child {
   margin-right: 0;
 }
+
 .footer-one .social li a {
   font-size: 18px;
   color: var(--dark-3);
@@ -536,9 +617,11 @@ button svg {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
+
 .footer-one .social li a:hover {
   color: var(--primary);
 }
+
 /* Footer Section End */
 
 
@@ -546,17 +629,19 @@ button svg {
 
 /**Navbar Section **/
 @media (max-width: 768px) {
-      .navbar-toggler {
-        display: block !important;
-      }
-      .navbar-expand .navbar-nav .nav-link {
-        padding-right: 0;
-        padding-left: 0;
-      }
-      .sidebar {
-        display: block;
-      }
-    }
+  .navbar-toggler {
+    display: block !important;
+  }
+
+  .navbar-expand .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .sidebar {
+    display: block;
+  }
+}
 
 /** Footer Section **/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -565,6 +650,7 @@ button svg {
     padding-bottom: 70px;
   }
 }
+
 @media (max-width: 767px) {
   .footer-one .footer-widget {
     padding-top: 20px;
@@ -577,19 +663,23 @@ button svg {
     margin-right: 6px;
   }
 }
+
 .footer-one .footer-app-store li:last-child {
   margin-right: 0;
 }
+
 @media (max-width: 767px) {
   .footer-one .footer-app-store li {
     width: 120px;
     display: block;
     margin-bottom: 10px;
   }
+
   .footer-one .footer-app-store li:last-child {
     margin: 0;
   }
 }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .footer-one .footer-app-store li {
     width: auto;
@@ -610,4 +700,3 @@ button svg {
 
 
 /* Media Queries Section End */
-

@@ -12,7 +12,7 @@
     // Initialize variables for the current slide index, slide width, and number of slides to show.
     let slideIndex = 0;
     let slideWidth = 0;
-    let slidesToShow = 3;
+    let slidesToShow = 4;
 
     // Define a function to calculate the width of each slide based on the viewport width.
     const calculateSlideWidth = () => {
@@ -22,7 +22,7 @@
         } else if (window.innerWidth <= 1024) {
             slidesToShow = 2;
         } else {
-            slidesToShow = 3;
+            slidesToShow = 4;
         }
         // Calculate the width of each slide as a percentage based on the number of visible slides.
         slideWidth = 100 / slidesToShow;
@@ -65,3 +65,4 @@
     // Calculate the initial slide width based on the viewport width.
     calculateSlideWidth();
 })();
+
