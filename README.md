@@ -36,5 +36,9 @@
 * Photos & Site design ideas from : [Site](https://demo.templatesjungle.com/vaso/index.html)
 * Hero Number Two : Photo by [Joshua Mnkhondya:] (https://www.pexels.com/photo/window-display-of-a-clothing-store-19546139/)
 * Confetti package :  https://www.npmjs.com/package/js-confetti
+* Photo by Marjan Taghipour from Pexels: https://www.pexels.com/photo/woman-in-dress-on-white-background-13632983/
+* Photo by Ivan Samkov from Pexels: https://www.pexels.com/photo/a-bearded-man-in-white-sweater-looking-with-a-serious-face-8499297/
+* Photo by COPPERTIST WU from Pexels: https://www.pexels.com/photo/cuban-link-chain-16124761/
+Photo by cottonbro studio from Pexels: https://www.pexels.com/photo/man-in-gray-jacket-raising-his-right-hand-5119523/
 
 * Note: To run the project locally, clone the repository and open the index.html file in your preferred web browser. Feel free to contribute, provide feedback, or report issues through the project's repository. Happy coding!

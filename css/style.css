@@ -72,7 +72,7 @@ a:hover, li:hover {
   height: 95vh;
 }
 
-.hero-main-container::before {
+/* .hero-main-container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -82,27 +82,27 @@ a:hover, li:hover {
   background: rgba(134, 113, 113, 0.5);
   background: rgba(86, 68, 68, 0.5);
   z-index: 1;
-}
+} */
 
 .first-hero-image {
   width: 100%;
   height: 95vh;
-  background-image: url('/images/hero.jpg');
+  background-image: url('/images/hero1.webp');
   background-size: cover;
-  background-position: 50% 0;
   background-attachment: fixed;
 }
 
 .hero-main-container {
   position: relative;
-  color: var(--e-body-white);
+  color: var(--e-black);
 }
 
 .hero-main-container a {
-  color: var(--e-body-white);
+  color: var(--e-black);
   text-decoration: none;
   border-bottom: 1px solid;
   padding-bottom: 3px;
+  font-weight: 100;
 }
 
 .hero-main-container a:hover {
@@ -111,7 +111,7 @@ a:hover, li:hover {
 
 .hero-message-container {
   position: absolute;
-  top: 65%;
+  top: 35%;
   left: 8%;
   padding-right: 30px;
   z-index: 2;
@@ -194,12 +194,12 @@ a:hover, li:hover {
   object-fit: cover;
 }
 .categories-box-left img {
-  height: 49.5vh;
+  height: 80.5vh;
   width: 50vw;
   padding-right: 12px;
 }
 .categories-box-right img{
-  height: 24.1vh;
+  height: 39.6vh;
   width: 50vw;
 }
 .mini-box-pb {
@@ -207,21 +207,29 @@ a:hover, li:hover {
 }
 .categories-mini-box {
   position: relative;
-  color: white;
+  color: var(--e-black);
+}
+.categories-mini-box a {
+  color: var(--e-black);
+  font-family: var(--body-font);
+}
+
+.categories-mini-box h2 {
+  font-family: var(--heading-font);
+  margin-bottom: -8px;
+  font-size: 4rem;
+  letter-spacing: 1px;
 }
 .mini-box-text {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 9%;
 }
-
-
-
-
-
-
-
-
+.mini-box-text2 {
+  position: absolute;
+  top: 55%;
+  left: 9%;
+}
 
 /* Categories Index End */
 
@@ -652,6 +660,123 @@ button svg {
     display: block;
   }
 }
+
+/** Index Hero Section **/
+@media (max-width: 890px) {
+  .hero-message-container h1 {
+    font-size: 2.5rem;
+  }
+  .hero-message-container h2 {
+    font-size: 1.3rem;
+    padding-bottom: 4px;
+  }
+}
+@media (max-width: 790px) {
+  .hero-message-container h1 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 750px) {
+  .hero-message-container h1 {
+    font-size: 2rem;
+  }
+  .hero-message-container h2 {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 502px) {
+  .hero-message-container h1 {
+    font-size: 2rem;
+  }
+  .hero-message-container h2 {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 435px) {
+  .hero-message-container h1 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 315px) {
+  .hero-message-container h1 {
+    font-size: 1.5rem;
+  }
+}
+/** Index About Us Section **/
+@media (max-width: 1080px) {
+  .index-about-container {
+    padding: 20px 80px;
+  }
+}
+@media (max-width: 750px) {
+  .index-about-container {
+    padding: 20px 50px;
+  }
+ .index-about-container h3 {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .index-about-container {
+    padding: 100px 40px;
+    height: auto;
+  }
+  .index-about-container h3 {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+  }
+}
+/** Index Category 3 boxes section **
+/* Index Categories 3 box section start */
+@media (max-width: 1000px) {
+  .shopping-categories-container {
+    flex-direction: column;
+  }
+  .categories-mini-box img {
+    object-fit:cover;
+  }
+  .categories-box-left img {
+    height: 40vh;
+    width: 100vw;
+    padding-right: 0px;
+    padding-bottom: 12px;
+  }
+  .categories-box-right img{
+    height: 40vh;
+    width: 100vw;
+  }
+  .mini-box-pb {
+    padding-bottom: 12px;
+  }
+  .categories-mini-box h2 {
+    font-size: 4rem;
+  }
+  .mini-box-text {
+    top: 60%;
+  }
+  .mini-box-text2 {
+    top: 60%;
+  }
+  
+  }
+  @media (max-width: 600px) {
+    .categories-mini-box h2 {
+      font-size: 2.5rem;
+    }
+    .mini-box-text {
+      top: 65%;
+    }
+    .mini-box-text2 {
+      top: 65%;
+    }
+    }
+    @media (max-width: 400px) {
+      .categories-mini-box h2 {
+        font-size: 2rem;
+      }
+    }
+ 
 
 /** Footer Section **/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
