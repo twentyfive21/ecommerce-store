@@ -69,21 +69,14 @@ a:hover, li:hover {
 /* Hero Section Start */
 .hero-main-container {
   position: relative;
-  height: 95vh;
-}
-
-.first-hero-image {
-  width: 100%;
-  height: 95vh;
-  background-image: url('/images/hero1.webp');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 40%;
-}
-
-.hero-main-container {
-  position: relative;
   color: var(--e-black);
+  height: 95vh;
+}
+
+.first-hero-image img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .hero-main-container a {
@@ -157,18 +150,10 @@ a:hover, li:hover {
 /* Index about End */
 
 /* Second Hero Index Start */
-.second-hero-container {
-  height: 50vh;
-}
-
-.scrolling-image {
-  width: 100%;
-  height: 100%;
-  background-image: url('/images/hero-two.jpg');
-  background-size: cover;
-  background-position: 50% 0;
-  background-attachment: fixed;
-  /* Keeps the background fixed while scrolling */
+.second-hero-container img {
+  height: 45vh;
+  width: 100vw;
+  object-fit: cover;
 }
 
 /* Second Hero Index End*/
@@ -459,6 +444,28 @@ button svg {
 }
 
 /* Subscribe Section End */
+
+/* SHOPPING PAGE START */
+.shop-main-container {
+  display: flex;
+}
+.shop-left-container {
+  background-color: pink;
+}
+.shop-filter-box h2{
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+.shop-filter-box p{
+  font-family: var(--body-font);
+  cursor: pointer;
+}
+.shop-filter-box p:hover{
+color: var(--e-gray);
+}
+/* SHOPPING PAGE END */
 
 /* Footer section Start */
 .text-header {
