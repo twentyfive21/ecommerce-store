@@ -72,21 +72,14 @@ ul li a:hover {
 /* Hero Section Start */
 .hero-main-container {
   position: relative;
-  height: 95vh;
-}
-
-.first-hero-image {
-  width: 100%;
-  height: 95vh;
-  background-image: url('/images/hero1.webp');
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 40%;
-}
-
-.hero-main-container {
-  position: relative;
   color: var(--e-black);
+  height: 95vh;
+}
+
+.first-hero-image img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .hero-main-container a {
@@ -160,18 +153,10 @@ ul li a:hover {
 /* Index about End */
 
 /* Second Hero Index Start */
-.second-hero-container {
-  height: 50vh;
-}
-
-.scrolling-image {
-  width: 100%;
-  height: 100%;
-  background-image: url('/images/hero-two.jpg');
-  background-size: cover;
-  background-position: 50% 0;
-  background-attachment: fixed;
-  /* Keeps the background fixed while scrolling */
+.second-hero-container img {
+  height: 45vh;
+  width: 100vw;
+  object-fit: cover;
 }
 
 /* Second Hero Index End*/
@@ -487,6 +472,46 @@ button svg {
   color: white !important;
 }
 /* Detail page shopping ITEM END */
+/* SHOPPING PAGE START */
+.shop-main-container {
+  display: flex;
+  justify-content: center;
+  padding: 150px 50px;
+}
+.shop-left-container {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ padding-right: 30px;
+ gap: 20px;
+}
+.shop-left-container div {
+  color: var(--e-black);
+  text-align: center;
+}
+.individual-item img{
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+}
+.individual-item h2 {
+  padding: 15px 0px;
+  margin-bottom: -10px;
+  font-family: var(--heading-font);
+}
+.shop-filter-box h2{
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+.shop-filter-box p{
+  font-family: var(--body-font);
+  cursor: pointer;
+}
+.shop-filter-box p:hover{
+color: var(--e-gray);
+}
+/* SHOPPING PAGE END */
 
 /* Footer section Start */
 .text-header {
@@ -742,8 +767,7 @@ button svg {
     padding-bottom: 10px;
   }
 }
-/** Index Category 3 boxes section **
-/* Index Categories 3 box section start */
+/** Index Category 3 boxes section **/
 @media (max-width: 1000px) {
   .shopping-categories-container {
     flex-direction: column;
@@ -792,6 +816,59 @@ button svg {
       }
     }
  
+/** Shopping Page **/
+@media (max-width: 1100px) {
+  .shop-left-container {
+   grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width: 800px) {
+  .shop-left-container {
+   grid-template-columns: repeat(1,1fr);
+  }
+  .shop-main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 50px;
+  }
+  .shop-right-container {
+    display: flex;
+    padding: 20px 10px 50px 10px;
+  }
+  .shop-filter-box {
+  padding: 0px 20px;
+  }
+  .shop-filter-box p {
+    margin-bottom: -5px;
+  }
+  .shop-filter-box h2 {
+    font-size: 1.4rem;
+  }
+  .shop-left-container {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .shop-filter-box h2 {
+    font-size: 1rem;
+  }
+  .shop-right-container {
+    padding: 20px 5px 50px 5px;
+  }
+   .shop-filter-box {
+  padding: 0px 20px;
+  }
+}
+@media (max-width: 365px) {
+   .shop-filter-box {
+  padding: 0px 8px;
+  }
+  .individual-item img{
+    width: 200px;
+    height: 250px;
+  }
+}
 
 /** Footer Section **/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
