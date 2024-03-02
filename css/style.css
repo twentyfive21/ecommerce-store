@@ -20,19 +20,22 @@
   font-family: var(--body-font);
 }
 
-ul {
-  color: var(--description-dark);
-}
-
 a {
   color: var(--description-dark);
   text-decoration: none;
-  transition: 0.3s color ease-out;
+  transition: color 0.3s ease-out;
 }
 
-
-a:hover, li:hover {
+a:hover {
   text-decoration: none;
+  color: var(--e-brown);
+}
+
+ul li a {
+  color: var(--description-dark);
+}
+
+ul li a:hover {
   color: var(--e-brown);
 }
 
@@ -420,7 +423,7 @@ button svg {
 .faq-header {
   font-weight: 500;
   font-family: var(--heading-font);
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .faq-description {
@@ -459,6 +462,31 @@ button svg {
 }
 
 /* Subscribe Section End */
+
+/* Detail page shopping ITEM START */
+.single-shop-item-heading{
+  font-family: var(--heading-font);
+}
+
+.single-shop-item-price{
+  color: var(--e-brown);
+}
+
+.single-shop-item-scratch{
+  color: #AEAEAE;
+  font-weight: 500;
+}
+
+.buy-item-btn{
+  background-color: var(--e-brown) !important;
+  color: white !important;
+}
+
+.buy-item-btn:hover{
+  background-color: #712424 !important;
+  color: white !important;
+}
+/* Detail page shopping ITEM END */
 
 /* Footer section Start */
 .text-header {
