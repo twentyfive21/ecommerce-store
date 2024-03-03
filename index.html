@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereal Main Page</title>
+  <link href="/css/style.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="icon" href="./images/store-logo.png" type="image/png">
+</head>
+
+<body>
+
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand navbar-heading fs-3" href="index.html">
+      <svg class="bi" width="24" height="24"><use xlink:href="#aperture"/></svg>
+      Ethereal
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="#offcanvas" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title navbar-heading" id="#offcanvasLabel">Ethereal</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav flex-grow-1 justify-content-around">
+          <li class="nav-item">
+ 
+    <!-- <div class="d-flex align-items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag-heart-fill me-2" viewBox="0 0 16 16">
+        <path d="M11.5 4v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m0 6.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132"/>
+      </svg>
+     
+    </div> -->
+</li>
+
+           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/twentyfive21/ecommerce-store">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="/shop.html">Shop</a></li>
+            <li class="nav-item">
+  <a class="nav-link" href="/cart.html">
+    <div class="d-flex align-items-center">
+      <span class="pe-1">Cart</span> 
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart me-2" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg>
+    </div>
+  </a>
+</li>
+<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu custom-navbar-bg-light">
+                <li><a class="dropdown-item custom-navbar-bg-light" href="index.html#link-faqs">FAQ</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./about.html#right-arrow">Subscribe to Newsletter</a></li>
+              </ul>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <!-- <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <h1 class="navbar-brand text-header fs-3 fw-bolder">Ethereal</h1>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header custom-navbar-bg-light">
+          <h1 class="offcanvas-title text-header" id="offcanvasNavbarLabel">Ethereal</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body custom-navbar-bg-light">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/twentyfive21/ecommerce-store" target="_blank">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./shop.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./cart.html">Cart</a>
+            </li>
+            <li class="nav-item dropdown custom-navbar-bg-light">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu custom-navbar-bg-light">
+                <li><a class="dropdown-item custom-navbar-bg-light" href="./about.html">FAQ</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./about.html">Subscribe to Newsletter</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+  <section class="hero-main-container">
+    <div class="first-hero-image"><img src="./images/hero1.webp" alt="two-models"/></div>
+      <div class="hero-message-container">
+        <h1 class="post">Welcome to Ethereal,</h1>
+        <h2>Immerse yourself in a realm of transcendent style, <br> where every piece is a carefully chosen manifestation of elegance and grace.</h2>
+        <a href="./shop.html">Shop Now</a>
+      </div>
+  </section>
+  
+  <section class="index-about-container">
+    <h2>About us</h2>
+    <h3>Step into the ethereal realm of style with Ethereal and immerse yourself in the unparalleled collection.</h3>
+    <p>Ethereal is a distinguished brand that offers a exquisite selection of clothing, shoes, and jewelry. Renowned for
+      its transcendent style, every piece is carefully curated to embody elegance and grace. With a commitment to
+      quality, Ethereal ensures that each item is not only unique, but also of exceptional craftsmanship. Elevate your
+      fashion experience with the rare and refined offerings from Ethereal, where every purchase is a statement of
+      individuality and sophistication.</p>
+  </section>
+
+  <section class="best-selling-container">
+    <div class="container display-header d-flex flex-wrap justify-content-between pb-4 align-items-center mt-3">
+      <h1 class="slider-header">Best selling Items</h1>
+      <div class="btn-right d-flex flex-wrap align-items-center mt-2">
+        <p class="invisible">ffffn</p>
+        <a href="shop.html" class="text-decoration-none text-black"><p class="me-5 border-bottom border-dark">View all items</p></a>
+
+        <div class="swiper-buttons">
+          <button class="swiper-next product-carousel-next btn border rounded-circle p-3" id="prevBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+            </svg>
+          </button>
+          <button class="swiper-next product-carousel-next btn border rounded-circle p-3" id="nextBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider container to hold and control the slides -->
+    <div class="slider-container">
+      <!-- Slider element containing individual slides -->
+      <div class="slider" id="slider">
+        <!-- Slide elements... -->
+        <div class="slide">
+    <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707525835/ufjbmfrkwyrhbrpubltr.webp"
+        alt="Slide 1" />
+    <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+    <p class="mt-2 slide-product-price">$500</p>
+   <a href="./details.html" class="view-item">View Item</a>
+</div>
+
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707262585/nx1t71nqt4xhcc6fdkrb.webp"
+            alt="Slide 2" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707264260/ruqkvoolkb0bbdwgnveo.jpg"
+            alt="Slide 3" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+            <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707353203/yglxtydcvcwsppt9jrmu.jpg"
+            alt="Slide 4" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <p class="mt-2 slide-product-price">$500</p>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+          <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+          <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+          <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+          <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+          <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+          <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+          <div class="slide">
+          <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707354441/kahotrdtyey4b3bafzus.jpg"
+            alt="Slide 5" />
+          <p class="card-title slide-product-text mt-4">Womens Jacket</p>
+          <h5 class="mt-2 slide-product-price">$500</h5>
+           <a href="./details.html" class="view-item">View Item</a>
+        </div>
+        <!-- Add more slides if needed -->
+      </div>
+    </div>
+
+  <section id="testimonials" class="position-relative py-5 my-5">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-2 col-md-8">
+          <h1 class="display-7 text-center mb-5 text-header fs-1 h1" data-aos="fade" data-aos-easing="ease-in"
+            data-aos-duration="1000" data-aos-once="true">What our customers say</h1>
+          <div class="review-content position-relative" data-aos="fade" data-aos-easing="ease-in"
+            data-aos-duration="1500" data-aos-once="true">
+            <div class="swiper testimonial-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide text-center d-flex justify-content-center">
+                  <div class="review-item">
+                    <div class="fs-4 fw-light fst-italic" id="customer-text">"Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Possimus esse quis amet vitae eius assumenda! Veritatis suscipit magnam debitis
+                      porro fugit quas quia ducimus excepturi quos nulla, optio eaque voluptatibus? ”</div>
+                    <div class="author-detail">
+                      <div class="name fw-bold text-uppercase pt-2" id="customer-name">Anna garcia</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-buttons text-center mt-5" data-aos="fade" data-aos-easing="ease-in"
+            data-aos-duration="1800" data-aos-once="true">
+            <button class="swiper-prev testimonial-arrow-prev me-2 btn" id="left-arrow">
+              <i class="fa-solid fa-arrow-left fs-1"></i>
+            </button>
+            <span>|</span>
+            <button class="swiper-next testimonial-arrow-next ms-2 btn" id="right-arrow">
+              <i class="fa-solid fa-arrow-right fs-1"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="second-hero-container" id="link-faqs">
+    <div class="scrolling-image"><img src="./images/hero-two.jpg" alt="clothing"/></div>
+  </section>
+
+  <section id="faqs" class="padding-xlarge my-5">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-2 col-md-8">
+          <h5 class="text-center mb-5 faq-header" data-aos="fade" data-aos-easing="ease-in" data-aos-duration="1000"
+            data-aos-once="true">Some FAQs</h5>
+          <div class="accordion accordion-flush" id="accordionFlush" data-aos="fade" data-aos-easing="ease-in"
+            data-aos-duration="1500" data-aos-once="true">
+
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingThree3">
+                <button class="accordion-button collapsed faq-description fs-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="true" aria-controls="flush-collapseThree">
+                  Placing an order online
+                </button>
+              </h4>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>You can explore products online by new arrivals or by choosing a product category. Refine your
+                    search by selecting colors, materials and styles. When you have made your selection, add the product
+                    to your shopping bag. You can review your shopping bag and proceed to checkout from the icon on the
+                    top right hand corner of the page. To complete your purchase simply enter your shipping, billing and
+                    payment details.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingOne3">
+                <button class="accordion-button collapsed faq-description fs-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                  Returns and Refunds
+                </button>
+              </h4>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>
+                    Returns can be made within 60 days, counting from the day of delivery.
+                    Items must be in the same condition, with original tags.
+                    Online orders can't be returned to outlet stores.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingFour3">
+                <button class="accordion-button collapsed faq-description fs-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour" aria-expanded="true" aria-controls="flush-collapseFour">
+                  Cancelling or modifying your order
+                </button>
+              </h4>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>Should you need to cancel your order, please contact us as soon as possible. After the order has
+                    been prepared for shipping, it can no longer be cancelled. No cancellations are possible for
+                    personalized products which we customize expressly according to your wish.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingFive3">
+                <button class="accordion-button collapsed faq-description fs-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive" aria-expanded="true" aria-controls="flush-collapseFive">
+                  Require assistance?
+                </button>
+              </h4>
+              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>You can contact Client Service by phone at +1-877-99-Ethereal / +1-877-997-7232 by livechat on our
+                    website Monday through Saturday 9am to 10pm and Sunday 9am to 8pm or by email:
+                    client.service.americas@Ethereal.com.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h4 class="accordion-header" id="flush-headingTwo3">
+                <button class="accordion-button collapsed faq-description fs-4" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="true" aria-controls="flush-collapseTwo">
+                  Delivery
+                </button>
+              </h4>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <p>A Tracking Number will be assigned to each package as soon as it is shipped.
+
+                    You will receive an email containing the tracking number and a link to follow the delivery.
+                    Orders placed with express shipping will be delivered by UPS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="shopping-categories-container">
+  <div class="categories-box-left">
+    <div class="categories-mini-box">
+      <img src="./images/woman-box.webp">
+      <div class="mini-box-text">
+        <h2>Women</h2>
+        <a href="./shop.html">Shop the collection</a>
+      </div>
+    </div>
+  </div>
+  <div class="categories-box-right">
+    <div class="categories-mini-box mini-box-pb">
+      <img src="./images/man-box.webp">
+      <div class="mini-box-text2">
+        <h2>Mens</h2>
+        <a href="./shop.html">Shop the collection</a>
+      </div>
+    </div>
+    <div class="categories-mini-box">
+      <img src="./images/accessory-box.jpeg">
+      <div class="mini-box-text2">
+        <h2>Accessories</h2>
+        <a href="./shop.html">Shop the collection</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <footer class="footer-area footer-one">
+    <div class="footer-widget">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-4 col-sm-12">
+            <div class="f-about">
+              <div class="footer-logo">
+                <h1 class="text-header h1">Ethereal</h1>
+              </div>
+              <p class="text">
+                Immerse yourself in a realm of transcendent style, <br> where every piece is a carefully chosen
+                manifestation of elegance and grace.
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-2 col-lg-2 col-sm-4">
+            <div class="footer-link">
+              <h3 class="text-header">Quick Links</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">About</a></li>
+                <li class="nav-item mb-2"><a href="shop.html" class="nav-link p-0 text-body-secondary">Shop</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Contact</a></li>
+                <li class="nav-item mb-2"><a href="index.html#link-faqs" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              </ul>
+            </div>
+            <!-- footer link -->
+          </div>
+          <div class="col-xl-2 col-lg-3 col-sm-4">
+            <div class="footer-link">
+              <h3 class="text-header">Products</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Men's Clothing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Women's Clothing</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Shoes</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jewelry</a></li>
+              </ul>
+            </div>
+            <!-- footer link -->
+          </div>
+          <div class="col-xl-2 col-lg-3 col-sm-4">
+            <div class="footer-link">
+              <h3 class="text-header">Contact Info</h3>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">512 South End, USA</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">(409) 948-4327</a>
+                </li>
+                <li class="nav-item mb-2"><a href="#"
+                    class="nav-link p-0 text-body-secondary">contact@Ethereal.com</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Chat With Us Live</a>
+                </li>
+              </ul>
+            </div>
+            <!-- footer link -->
+          </div>
+
+
+          <div class="col mt-5">
+            <h3 class="text-header">Social info</h3>
+            <p class="text-body-secondary">You can follow us on our social platforms to get updates.</p>
+            <ul class="nav d-flex justify-content-start">
+              <li class="nav-item"><a href="#" class="nav-link ps-2 text-body-secondary"><i
+                    class="fa-brands fa-facebook-f"></i></a></li>
+              <li class="nav-item"><a href="#" class="nav-link ps-2 text-body-secondary"><i
+                    class="fa-brands fa-instagram"></i></a></li>
+              <li class="nav-item"><a href="#" class="nav-link ps-2 text-body-secondary"><i
+                    class="fa-brands fa-x-twitter"></i></a></li>
+              <li class="nav-item"><a href="#" class="nav-link ps-2 text-body-secondary"><i
+                    class="fa-brands fa-linkedin-in"></i></a></li>
+              <li class="nav-item"><a href="#" class="nav-link ps-2 text-body-secondary"><i
+                    class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- footer widget -->
+    <div class="footer-copyright border-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="
+                  copyright
+                  text-center
+                  d-md-flex
+                  justify-content-between
+                  align-items-center
+                  ">
+              <p class="text">Copyright © 2024 Ethereal. All Rights Reserved</p>
+              <ul class="social">
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="lni lni-facebook-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="lni lni-twitter-original"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <i class="lni lni-instagram-filled"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+                </li>
+              </ul>
+            </div>
+            <!-- copyright -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- footer copyright -->
+  </footer>
+  <!--====== FOOTER PART ENDS ======-->
+  </div>
+
+  <script src="scripts/script.js"></script>
+   <script src="scripts/about.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/e36fb19258.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
