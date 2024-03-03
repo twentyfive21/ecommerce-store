@@ -233,8 +233,16 @@
                     <li data-value="S" class="select-item">3</li>
                   </ul>
                 </div>
-                <div class="meta-item d-flex mb-1">
+                    <div class="meta-item d-flex mb-1">
                   <span class="text-uppercase me-2">Category:</span>
+                  <ul class="select-list list-unstyled d-flex mb-0">
+                    <li data-value="S" class="select-item">
+                      <a href="#" class="text-decoration-none ps-1">Men's Clothing</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="meta-item d-flex mb-1">
+                  <span class="text-uppercase me-2">Tags:</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li data-value="S" class="select-item">
                       <a href="#" class="text-decoration-none">Casual Outings</a>,
@@ -244,14 +252,6 @@
                     </li>
                     <li data-value="S" class="select-item">
                       <a href="#" class="text-decoration-none ps-1">Traveling</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="meta-item d-flex mb-1">
-                  <span class="text-uppercase me-2">Tags:</span>
-                  <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">
-                      <a href="#" class="text-decoration-none ps-1">Men's Clothing</a>
                     </li>
                   </ul>
                 </div>
@@ -270,52 +270,53 @@
         <div class="tabs-listing">
           <nav>
             <div class="nav nav-tabs d-flex justify-content-center py-3" id="nav-tab" role="tablist">
-              <button class="nav-link text-uppercase active" id="nav-home-tab" data-bs-toggle="tab"
+              <button class="nav-link text-uppercase active border-0 fs-0 fs-md-5" id="nav-home-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
                 aria-selected="true">Description</button>
-              <button class="nav-link text-uppercase" id="nav-review-tab" data-bs-toggle="tab"
+              <button class="nav-link text-uppercase  border-0 fs-md-5 fs-0" id="nav-review-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-review" type="button" role="tab" aria-controls="nav-review"
                 aria-selected="false">Reviews</button>
-              <button class="nav-link text-uppercase" id="nav-shipping-tab" data-bs-toggle="tab"
+              <button class="nav-link text-uppercase  border-0 fs-md-5 fs-0" id="nav-shipping-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-shipping" type="button" role="tab" aria-controls="nav-shipping"
                 aria-selected="false">Shipping & Return</button>
-              <button class="nav-link text-uppercase" id="nav-information-tab" data-bs-toggle="tab"
+              <button class="nav-link text-uppercase  border-0 fs-md-5 fs-0" id="nav-information-tab" data-bs-toggle="tab"
                 data-bs-target="#nav-information" type="button" role="tab" aria-controls="nav-information"
                 aria-selected="false">Additional information</button>
 
             </div>
           </nav>
-          <div class="tab-content" id="nav-tabContent">
+          <div class="tab-content border-bottom" id="nav-tabContent">
             <div class="tab-pane fade active show tabs-text-format" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-              <p>Product Description</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec
-                nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
-                pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
-                vulputate sem tristique cursus.
+              <h5>Product Description</h5>
+              <p>This Vintage Bordeaux Zip Up is a timeless piece that combines style and comfort. Crafted with attention to detail, it features a classic zip-up design that adds versatility to your wardrobe. Made from high-quality materials, this garment ensures durability and long-lasting wear. </p>
+               <h5>Great for</h5>
               <ul class="fw-light">
-                <li>Donec nec justo eget felis facilisis fermentum.</li>
-                <li>Suspendisse urna viverra non, semper suscipit pede.</li>
-                <li>Aliquam porttitor mauris sit amet orci.</li>
+                <li>Casual Outings</li>
+                <li>Outdoor Activities</li>
+                <li>Traveling</li>
               </ul>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.
-                Nullam malesuada erat ut turpis. Suspendisse urna viverra non, semper suscipit, posuere a, pede. Donec
-                nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
-                pellentesque felis. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
-                vulputate sem tristique cursus.</p>
+          
+        <h5>Care instructions</h5>
+        <p>Read about how you can make your clothes last longer:</p>
+        <ul>
+          <li>Only non-chlorine bleach when needed</li>
+          <li>No dry clean</li>
+          <li>Medium iron</li>
+          <li>Machine wash cool</li>
+          <li>Wash with like colors</li>
+          <li>Line dry</li>
+        </ul>
             </div>
 
             <div class="tab-pane fade tabs-text-format" id="nav-information" role="tabpanel" aria-labelledby="nav-information-tab">
-              <p>It is Comfortable and Best</p>
+              <h5>Comfort and Superior Quality</h5>
               <p>Our products are designed for maximum comfort and quality. With attention to detail and superior craftsmanship, we prioritize your comfort without sacrificing style. From luxurious materials to ergonomic designs, each item is tailored to enhance your daily experience. We uphold the highest standards to ensure you receive nothing but the best. Upgrade your lifestyle and indulge in unparalleled comfort with us.</p>
             </div>
 
             <div class="tab-pane fade tabs-text-format" id="nav-shipping" role="tabpanel" aria-labelledby="nav-shipping-tab">
-              <p>Returns Policy</p>
-              <p>Our commitment to customer satisfaction extends beyond the point of purchase. If you find yourself dissatisfied with your product for any reason, we're here to help. Simply reach out to our dedicated support team within [number of days] days of receiving your order, and we'll guide you through the returns process hassle-free.</p>
-              <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. In blandit nunc enim, sit amet pharetra
-                erat aliquet ac.</p>
-              <p>Shipping</p>
+              <h5>Returns Policy</h5>
+              <p>Our commitment to customer satisfaction extends beyond the point of purchase. If you find yourself dissatisfied with your product for any reason, we're here to help. Simply reach out to our dedicated support team within 1 day of receiving your order, and we'll guide you through the returns process hassle-free.</p>
+              <h5>Shipping</h5>
               <p>We understand the anticipation of receiving your order promptly. That's why we strive to ensure swift and reliable shipping services for all our customers. From processing to delivery, we prioritize efficiency without compromising on the safety and integrity of your items. Whether you're across town or across the globe, you can trust us to deliver your package securely and on time.</p>
             </div>
 
@@ -434,94 +435,80 @@
       <div class="container px-4 py-5" id="custom-cards">
         <div class="display-header d-flex flex-wrap justify-content-between align-items-center pb-4 border-bottom">
           <!-- <h3 class="mt-3">Related Products</h3> -->
-          <h2 class="pb-2">Related Products</h2>
+          <h2 class="pb-2 single-shop-item-heading">Other Products</h2>
           <a href="shop.html" class="btn">View all items</a>
         </div>
 
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707526247/opatbujxnxrymtbnb8vf.webp'); background-position: center; background-size: cover;">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
-                  </li>
-                  <li class="d-flex align-items-center me-3 text-black">
-                    <svg class="bi me-2" width="1em" height="1em"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                          d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
-                      </svg></svg>
-                    <small class="border-bottom">View Item</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3" />
-                    </svg>
-                    <small>3d</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707351270/oz4fu9tcb0kxbec53taa.jpg'); background-position: center; background-size: cover;">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
-                  </li>
-                  <li class="d-flex align-items-center me-3 text-black">
-                    <svg class="bi me-2" width="1em" height="1em"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                          d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
-                      </svg></svg>
-                    <small class="border-bottom">View Item</small>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <svg class="bi me-2" width="1em" height="1em">
-                      <use xlink:href="#calendar3" />
-                    </svg>
-                    <small>5d</small>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-              style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707353953/g47bhjqrewtorc4qq4z9.jpg'); background-position: center; background-size: cover;">
+             <div class="col">
+              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg py-5"
+             style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707525917/s8x7zdw3tus6nsrrrsdu.webp'); background-position: center; background-size: cover;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold invisible">Another longer title belongs here</h3>
+                <h5 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold related-shop-item-price"> <small class="border-bottom">View Item</small></h5>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
                   </li>
                   <li class="d-flex align-items-center me-3 text-black">
-                    <svg class="bi me-2" width="1em" height="1em"><svg xmlns="http://www.w3.org/2000/svg" width="16"
-                        height="16" fill="currentColor" class="bi bi-bag-heart" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                          d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0M14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1M8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
-                      </svg></svg>
-                    <small class="border-bottom">View Item</small>
+                    
                   </li>
                   <li class="d-flex align-items-center">
                     <svg class="bi me-2" width="1em" height="1em">
                       <use xlink:href="#calendar3" />
                     </svg>
-                    <small>5d</small>
+                   
                   </li>
                 </ul>
               </div>
             </div>
           </div>
+
+                 <div class="col">
+             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg py-5"
+             style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707527319/ftfoc7uwwb4jvhvfhnre.jpg'); background-position: bottom; background-size: cover; background-repeat: no-repeat;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h5 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold related-shop-item-price"> <small class="border-bottom">View Item</small></h5>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
+                  </li>
+                  <li class="d-flex align-items-center me-3 text-black">
+                    
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                   
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg py-5"
+             style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707353458/hdwuwgn7kds4zsmbjo1v.jpg'); background-position: center; background-size: cover;">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h5 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold related-shop-item-price"> <small class="border-bottom">View Item</small></h5>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
+                  </li>
+                  <li class="d-flex align-items-center me-3 text-black">
+                    
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3" />
+                    </svg>
+                   
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -577,6 +564,52 @@
 
     </div>
   </section>
+<div class="container">
+        <div class="row">
+
+            <div class="cart-bottom d-flex flex-wrap justify-content-between align-items-center pt-2">
+              <form action="#" class="d-flex flex-wrap justify-content-between">
+                <input type="text" class="border border-dark p-2 me-1 mb-2" required="" placeholder="Coupon Code">
+                <a href="#" class="btn btn-dark mb-2" type="submit">Apply Coupon</a>
+              </form>
+              <a href="#" class="btn btn-dark mb-2">Update cart</a>
+            </div>
+          </div>
+          <div class="cart-totals padding-medium">
+            <h3 class="pb-4">Cart Total</h3>
+            <div class="total-price pb-5">
+              <table cellspacing="0" class="table text-uppercase">
+                <tbody>
+                  <tr class="subtotal pt-2 pb-2 border-top border-bottom border-dark">
+                    <th>Subtotal</th>
+                    <td class="align-middle border-0" data-title="Subtotal">
+                      <span class="price-amount amount text-primary">
+                        <bdi>
+                          <span class="price-currency-symbol">$</span>2,370.00
+                        </bdi>
+                      </span>
+                    </td>
+                  </tr>
+                  <tr class="order-total pt-2 pb-2 border-bottom border-dark">
+                    <th>Total</th>
+                    <td class="align-middle border-0" data-title="Total">
+                      <span class="price-amount amount text-primary">
+                        <bdi>
+                          <span class="price-currency-symbol">$</span>2,370.00</bdi>
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="button-wrap">
+              <button class="btn btn-dark me-2 mb-2">Update Cart</button>
+              <button class="btn btn-dark me-2 mb-2">Continue Shopping</button>
+              <button class="btn btn-primary me-2 mb-2">Proceed to checkout</button>
+            </div>
+          </div>
+          </div>
+          </div>
 
 
 
