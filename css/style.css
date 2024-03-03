@@ -273,7 +273,7 @@ button svg {
 /* Format the slider element to align the slides properly */
 .slider {
   display: flex;
-  transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   width: 75%;
   height: auto;
 }
@@ -387,19 +387,6 @@ button svg {
   font-weight: 300 !important;
 }
 
-/* Media queries to adjust the slider's layout based on the viewport width */
-@media (max-width: 1024px) {
-  .slide {
-    flex: 0 0 calc(100% / 2);
-  }
-}
-
-@media (max-width: 767px) {
-  .slide {
-    flex: 1 0 100%;
-  }
-}
-
 
 /* Image slider Items END */
 
@@ -451,6 +438,11 @@ button svg {
 /* Detail page shopping ITEM START */
 .single-shop-item-heading{
   font-family: var(--heading-font);
+}
+
+.related-shop-item-price{
+  color: white;
+   text-shadow: 2px 2px var(--e-black);
 }
 
 .single-shop-item-price{
@@ -532,6 +524,40 @@ color:#B3B5B4;
 .review-part-right p{
 font-size: 18px;
 color:#919191;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid var(--description-dark);
+}
+.nav-tabs .nav-link {
+  color: var(--description-dark);
+  font-weight: 600;
+}
+.nav-tabs .nav-link:focus{
+  box-shadow: none;
+}
+.nav-tabs .nav-link {
+  background: none;
+  border: none;
+}
+.nav-tabs button.nav-link.active {
+  color: var(--e-brown);
+  background: none;
+}
+.nav-tabs button.nav-link:hover {
+  color: var(--e-brown);
+}
+
+.tabs-listing .tab-content {
+  /* border-bottom: 1px solid var(--e-black); */
+  padding: 40px 0;
+}
+.product-tabs .review-item{
+  width: 50%;
+  margin-bottom: 20px;
+}
+.product-tabs .review-item .image-holder{
+  margin-right: 10px;
 }
 
 /* Detail page shopping ITEM END */
@@ -763,6 +789,22 @@ color: var(--e-gray);
     display: block;
   }
 }
+/** Slider Section **/
+/*slider's layout based on the viewport width */
+/* For screens with a maximum width of 1024 pixels */
+@media (max-width: 1024px) {
+  .slide {
+    flex: 0 0 100%; /* Set each slide to take up the full width */
+  }
+}
+
+/* For screens with a maximum width of 767 pixels */
+@media (max-width: 767px) {
+  .slide {
+    flex: 1 0 100%; /* Set each slide to take up the full width */
+  }
+}
+
 
 /** Index Hero Section **/
 @media (max-width: 890px) {
@@ -932,6 +974,27 @@ color: var(--e-gray);
     height: 250px;
   }
 }
+
+/** Single item section start**/
+@media screen and (max-width: 991px) {
+  .product-tabs .review-item{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .product-tabs .review-item .image-holder{
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .cart-header{
+    display: none;
+  }
+}
+
+/** Single item section end **/
+
+
+
 
 /** Footer Section **/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
