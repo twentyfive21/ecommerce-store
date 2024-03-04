@@ -1,3 +1,34 @@
+const sliderBox = document.querySelector(".slider");
+
+const url = 'https://affogato-the-ecommerce-store.p.rapidapi.com/api/items/category/accessories';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'ad135d37ffmshca57b4f4ff275f0p153242jsnfaf4aaf1abb9',
+		'X-RapidAPI-Host': 'affogato-the-ecommerce-store.p.rapidapi.com'
+	}
+};
+
+
+fetch(url, options)
+.then(res => res.json())
+.then((json) => {
+    displaySlider(json.items);    
+    console.log(json.items);
+})
+.catch(err => console.log(err));
+
+const displaySlider = (data) => {
+    sliderBox.innerHTML = data.map(item => {
+        return `<div class="slide">
+        <img src="${item.image[0]}"
+            alt="${item.image[0]}" />
+        <p class="card-title slide-product-text mt-4">${item.productName}</p>
+        <p class="mt-2 slide-product-price">${item.price}</p>
+        <a href="./details.html" class="view-item">View Item</a>
+        </div>`
+    }).join('')
+}
 
 // Wrap the code in an Immediately Invoked Function Expression (IIFE) to avoid polluting the global namespace.
 (function() {
