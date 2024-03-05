@@ -85,13 +85,13 @@
     class="position-relative overflow-hidden text-center bg-body-tertiary d-flex align-items-center justify-content-center mt-5"
     style="background-image: url(./images/grey-hero.jpg); height: 420px;">
     <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-1 page-hero-header fw-bold">Vintage Zip Up </h1>
+      <h1 class="display-1 page-hero-header fw-bold" id="product-header">Vintage Zip Up</h1>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
         <div class="breadcrumbs">
           <span class="item">
             <a href="index.html" class="text-black text-decoration-none">Home ></a>
           </span>
-          <span class="item">Vintage Zip Up</span>
+          <span class="item" id="product-header-link">Vintage Zip Up</span>
         </div>
       </div>
     </div>
@@ -127,7 +127,7 @@
         <div class="col-lg-6">
           <div class="product-info">
             <div class="element-header">
-              <h1 class="product-title my-3 single-shop-item-heading fs-1">Vintage Bordeaux Zip Up</h1>
+              <h1 class="product-title my-3 single-shop-item-heading fs-1" id="product-item-name">Vintage Bordeaux Zip Up</h1>
               <div class="rating-container d-flex align-items-center my-3">
                 <div class="rating pe-1" data-rating="1" onclick=rate(1)>
                   <svg class="bi" width="16" height="16">
@@ -167,10 +167,10 @@
               </div>
             </div>
             <div class="product-price my-3">
-              <span class="fs-1 single-shop-item-price">$160.99</span>
+              <span class="fs-1 single-shop-item-price" id="product-item-price">$160.99</span>
               <!-- <del class="single-shop-item-scratch">$300.00</del> -->
             </div>
-            <p>This Vintage Bordeaux Zip Up is a timeless piece that combines style and comfort. Crafted with attention
+            <p id="product-item-desc">This Vintage Bordeaux Zip Up is a timeless piece that combines style and comfort. Crafted with attention
               to detail, it features a classic zip-up design that adds versatility to your wardrobe. Made from
               high-quality materials, this garment ensures durability and long-lasting wear. </p>
             <hr>
@@ -181,14 +181,14 @@
                   </h4>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li class="select-item me-3" data-val="Green" title="Green">
-                      <a href="#" class="text-decoration-none">Bordeaux</a>
+                      <a href="#" class="text-decoration-none" id="product-item-color">Bordeaux</a>
                     </li>
                   </ul>
                 </div>
               </div>
               <div class="swatch product-select" data-option-index="1">
                 <h4 class="item-title text-decoration-underline text-uppercase single-shop-item-heading fs-3">Size:</h4>
-                <ul class="select-list list-unstyled d-flex mb-0">
+                <ul class="select-list list-unstyled d-flex mb-0" id="product-item-size-container">
                   <li data-value="S" class="select-item me-3">
                     <a href="" class="text-decoration-none">Small</a>
                   </li>
@@ -230,20 +230,20 @@
                 <div class="meta-item d-flex mb-1">
                   <span class="text-uppercase me-2">SKU:</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
-                    <li data-value="S" class="select-item">3</li>
+                    <li data-value="S" class="select-item" id="product-id-number">3</li>
                   </ul>
                 </div>
                     <div class="meta-item d-flex mb-1">
                   <span class="text-uppercase me-2">Category:</span>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li data-value="S" class="select-item">
-                      <a href="#" class="text-decoration-none ps-1">Men's Clothing</a>
+                      <a href="#" class="text-decoration-none ps-1" id="product-category-name">Men's Clothing</a>
                     </li>
                   </ul>
                 </div>
                 <div class="meta-item d-flex mb-1">
                   <span class="text-uppercase me-2">Tags:</span>
-                  <ul class="select-list list-unstyled d-flex mb-0">
+                  <ul class="select-list list-unstyled d-flex mb-0" id="product-tags-name-container">
                     <li data-value="S" class="select-item">
                       <a href="#" class="text-decoration-none">Casual Outings</a>,
                     </li>
@@ -288,9 +288,9 @@
           <div class="tab-content border-bottom" id="nav-tabContent">
             <div class="tab-pane fade active show tabs-text-format" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
               <h5>Product Description</h5>
-              <p>This Vintage Bordeaux Zip Up is a timeless piece that combines style and comfort. Crafted with attention to detail, it features a classic zip-up design that adds versatility to your wardrobe. Made from high-quality materials, this garment ensures durability and long-lasting wear. </p>
+              <p id="tabs-product-des">This Vintage Bordeaux Zip Up is a timeless piece that combines style and comfort. Crafted with attention to detail, it features a classic zip-up design that adds versatility to your wardrobe. Made from high-quality materials, this garment ensures durability and long-lasting wear. </p>
                <h5>Great for</h5>
-              <ul class="fw-light">
+              <ul class="fw-light" id="tabs-product-tags">
                 <li>Casual Outings</li>
                 <li>Outdoor Activities</li>
                 <li>Traveling</li>
@@ -328,8 +328,10 @@
                   <div class="row">
                     <div class="col-md-offset-1 col-md-10 col-sm-12 main-section">
                       <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-12" id="reviews-container">
+
                           <div class="row review-section">
+
                             <div class="col-md-4 col-md-4 col-xs-4 review-part-left">
                               <div class="row">
                                 <div class="col-md-4 col-sm-4 col-xs-12">
@@ -416,6 +418,7 @@
                               </div>
                             </div>
                           </div>
+
                         </div>
                       </div>
                     </div>
