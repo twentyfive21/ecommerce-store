@@ -15,7 +15,10 @@
     const imageOne = document.getElementById('image-one');
     const imageTwo = document.getElementById('image-two');
     const imageThree = document.getElementById('image-three');
+    const inputQuantity = document.getElementById('inputQuantity');
+    const addToCartBtn = document.getElementById('addToCartBtn');
     let currentId;
+ 
 
     const urlParams = new URLSearchParams(window.location.search);
     currentId = urlParams.get("q");
@@ -33,11 +36,12 @@
     .then(res => res.json())
     .then((json) => {
         displaySingleProduct(json.item)
+       
+        // addToCart(json.item)
         console.log(json.item);
     })
     .catch(err => console.log(err));
 
- console.log(productItemDesc);
     function displaySingleProduct(dataArray){
         productHeader.innerText = dataArray.productName;
         productHeaderLink.innerText = dataArray.productName;
@@ -107,4 +111,30 @@ imageTwo.addEventListener('click', ()=>{
 imageThree.addEventListener('click', ()=>{
     mainImage.setAttribute('src', dataArray.image[2]);
 })  
+
+addToCartBtn.addEventListener("click", ()=>{
+    addToCart(dataArray)
+})
 }
+
+
+
+const getLocalStorage = () => {
+      // Check if 'cartList' item exists in local storage
+   // If it exists, parse and return the data else return empty []
+   return localStorage.getItem('cartList')
+   ? JSON.parse(localStorage.getItem('cartList'))
+   : [];
+}
+// inputQuantity.addEventListener('input', (e)=>{
+//     console.log(e.target.value)
+// })
+function addToCart({id, productName, price, image}){
+    const inputNumber = inputQuantity.value;
+    const cartItem = {id, quantity: inputNumber, productName, price, image};
+    console.log(cartItem)
+    let list = getLocalStorage();
+    list.push(cartItem);
+    localStorage.setItem('cartList', JSON.stringify(list));
+}
+
