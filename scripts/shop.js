@@ -19,14 +19,23 @@ const options = {
 	}
 };
 
-
-fetch(url, options)
-.then(res => res.json())
-.then((json) => {
-    displayItems(json.items)
-    console.log(json.items)
-})
-.catch(err => console.log(err));
+window.onload = function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    selectedCategory = urlParams.get("c"); // = get category
+    
+      if (selectedCategory){
+          displaySelectedCategory(selectedCategory)
+      } else {
+        fetch(url, options)
+        .then(res => res.json())
+        .then((json) => {
+            displayItems(json.items)
+            console.log(json.items)
+        })
+        .catch(err => console.log(err));
+      }
+  };
+  
 
 const displayItems = (data) => {
     shopLeftBox.innerHTML = data.map(item => {
