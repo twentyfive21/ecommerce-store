@@ -85,13 +85,13 @@
     class="position-relative overflow-hidden text-center bg-body-tertiary d-flex align-items-center justify-content-center mt-5"
     style="background-image: url(./images/grey-hero.jpg); height: 420px;">
     <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-1 page-hero-header fw-bold" id="product-header">Vintage Zip Up</h1>
+      <h1 class="display-1 page-hero-header fw-bold" id="product-header"></h1>
       <div class="d-flex gap-3 justify-content-center lead fw-normal">
         <div class="breadcrumbs">
           <span class="item">
             <a href="index.html" class="text-black text-decoration-none">Home ></a>
           </span>
-          <span class="item" id="product-header-link">Vintage Zip Up</span>
+          <span class="item placeholder-glow" id="product-header-link"></span>
         </div>
       </div>
     </div>
@@ -104,30 +104,30 @@
           <div class="row">
             <div class="col">
               <div class="d-flex flex-column align-content-center">
-                <div class="mb-2">
-                  <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707525836/u2rb9zknombecf7zkn8z.jpg"
-                    alt="" class="img-fluid">
+                <div class="mb-2 placeholder-glow">
+                  <img src=""
+                    alt="" class="img-fluid" id="image-one">
+                </div>
+                <div class="my-2 placeholder-glow">
+                  <img src=""
+                    alt="" class="img-fluid" id="image-two">
                 </div>
                 <div class="my-2">
-                  <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707525836/u2rb9zknombecf7zkn8z.jpg"
-                    alt="" class="img-fluid">
-                </div>
-                <div class="my-2">
-                  <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707525836/u2rb9zknombecf7zkn8z.jpg"
-                    alt="" class="img-fluid">
+                  <img src=""
+                    alt="" class="img-fluid placeholder-glow" id="image-three">
                 </div>
               </div>
             </div>
-            <div class="overflow-hidden col-9">
-              <img src="https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707525836/u2rb9zknombecf7zkn8z.jpg"
-                alt="single-product" class="img-fluid">
+            <div class="overflow-hidden col-9 placeholder-glow">
+              <img src=""
+                alt="" class="img-fluid placeholder-glow" id="main-image">
             </div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="product-info">
             <div class="element-header">
-              <h1 class="product-title my-3 single-shop-item-heading fs-1" id="product-item-name">Vintage Bordeaux Zip Up</h1>
+              <h1 class="product-title my-3 single-shop-item-heading fs-1 placeholder-glow" id="product-item-name"></h1>
               <div class="rating-container d-flex align-items-center my-3">
                 <div class="rating pe-1" data-rating="1" onclick=rate(1)>
                   <svg class="bi" width="16" height="16">
@@ -170,9 +170,7 @@
               <span class="fs-1 single-shop-item-price" id="product-item-price">$160.99</span>
               <!-- <del class="single-shop-item-scratch">$300.00</del> -->
             </div>
-            <p id="product-item-desc">This Vintage Bordeaux Zip Up is a timeless piece that combines style and comfort. Crafted with attention
-              to detail, it features a classic zip-up design that adds versatility to your wardrobe. Made from
-              high-quality materials, this garment ensures durability and long-lasting wear. </p>
+            <p id="product-item-desc" class="placeholder-glow"></p>
             <hr>
             <div class="cart-wrap">
               <div class="color-options product-select my-3">
@@ -181,7 +179,7 @@
                   </h4>
                   <ul class="select-list list-unstyled d-flex mb-0">
                     <li class="select-item me-3" data-val="Green" title="Green">
-                      <a href="#" class="text-decoration-none" id="product-item-color">Bordeaux</a>
+                      <a href="#" class="text-decoration-none placeholder-glow" id="product-item-color"></a>
                     </li>
                   </ul>
                 </div>
@@ -244,15 +242,7 @@
                 <div class="meta-item d-flex mb-1">
                   <span class="text-uppercase me-2">Tags:</span>
                   <ul class="select-list list-unstyled d-flex mb-0" id="product-tags-name-container">
-                    <li data-value="S" class="select-item">
-                      <a href="#" class="text-decoration-none">Casual Outings</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#" class="text-decoration-none ps-1">Outdoor Activities</a>,
-                    </li>
-                    <li data-value="S" class="select-item">
-                      <a href="#" class="text-decoration-none ps-1">Traveling</a>
-                    </li>
+                    
                   </ul>
                 </div>
               </div>
@@ -290,7 +280,7 @@
               <h5>Product Description</h5>
               <p id="tabs-product-des">This Vintage Bordeaux Zip Up is a timeless piece that combines style and comfort. Crafted with attention to detail, it features a classic zip-up design that adds versatility to your wardrobe. Made from high-quality materials, this garment ensures durability and long-lasting wear. </p>
                <h5>Great for</h5>
-              <ul class="fw-light" id="tabs-product-tags">
+              <ul class="fw-light" id="tabs-product-tags-container">
                 <li>Casual Outings</li>
                 <li>Outdoor Activities</li>
                 <li>Traveling</li>
@@ -330,95 +320,6 @@
                       <div class="row">
                         <div class="col-md-12" id="reviews-container">
 
-                          <div class="row review-section">
-
-                            <div class="col-md-4 col-md-4 col-xs-4 review-part-left">
-                              <div class="row">
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                  <img src="https://randomuser.me/api/portraits/women/2.jpg">
-                                </div>
-                                <div class="col-md-8 col-sm-8 col-xs-12">
-                                  <span>Vivi Manka</span><br>
-                                  <p>11-14-2023</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-8 col-sm-8 col-xs-8 review-part-right">
-                              <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row review-section mt-2">
-                            <div class="col-md-4 col-md-4 col-xs-4 review-part-left">
-                              <div class="row">
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                  <img src="https://randomuser.me/api/portraits/men/20.jpg">
-                                </div>
-                                <div class="col-md-8 col-sm-8 col-xs-12">
-                                  <span>Olivia Santos</span><br>
-                                  <p>11-14-2023</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-8 col-sm-8 col-xs-8 review-part-right">
-                              <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row review-section mt-2">
-                            <div class="col-md-4 col-md-4 col-xs-4 review-part-left">
-                              <div class="row">
-                                <div class="col-md-4 col-sm-4 col-xs-12">
-                                  <img src="https://randomuser.me/api/portraits/women/8.jpg">
-                                </div>
-                                <div class="col-md-8 col-sm-8 col-xs-12">
-                                  <span>Maria Mya</span><br>
-                                  <p>11-14-2023</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-md-8 col-sm-8 col-xs-8 review-part-right">
-                              <div class="row">
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                  <i class="fa fa-star-o" aria-hidden="true"></i>
-                                </div>
-                                <div class="col-md-12 col-sm-12 col-xs-12">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-
                         </div>
                       </div>
                     </div>
@@ -447,7 +348,7 @@
               <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg py-5"
              style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707525917/s8x7zdw3tus6nsrrrsdu.webp'); background-position: center; background-size: cover;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h5 class="pt-5 mt-5 mb-4 display-6 lh-1"> <small class="related-shop-item-price">View Item</small></h5>
+               <a href="./details.html?q=39" class="text-decoration-none"> <h5 class="pt-5 mt-5 mb-4 display-6 lh-1"> <small class="related-shop-item-price">View Item</small></h5></a>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
@@ -470,7 +371,8 @@
              <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg py-5"
              style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707527319/ftfoc7uwwb4jvhvfhnre.jpg'); background-position: bottom; background-size: cover; background-repeat: no-repeat;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h5 class="pt-5 mt-5 mb-4 display-6 lh-1"> <small class="related-shop-item-price">View Item</small></h5>
+                <a href="./details.html?q=11" class="text-decoration-none"> <h5 class="pt-5 mt-5 mb-4 display-6 lh-1"> <small class="related-shop-item-price">View Item</small></h5></a>
+               
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
@@ -493,7 +395,7 @@
             <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg py-5"
              style="background-image: url('https://res.cloudinary.com/dpgbxk6w7/image/upload/v1707353458/hdwuwgn7kds4zsmbjo1v.jpg'); background-position: center; background-size: cover;">
               <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-    <h5 class="pt-5 mt-5 mb-4 display-6 lh-1"> <small class="related-shop-item-price">View Item</small></h5>
+     <a href="./details.html?q=30" class="text-decoration-none"> <h5 class="pt-5 mt-5 mb-4 display-6 lh-1"> <small class="related-shop-item-price">View Item</small></h5></a>
                 <ul class="d-flex list-unstyled mt-auto">
                   <li class="me-auto">
                     <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
