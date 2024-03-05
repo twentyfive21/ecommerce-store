@@ -25,7 +25,7 @@ const displaySlider = (data) => {
             alt="${item.image[0]}" />
         <p class="card-title slide-product-text mt-4">${item.productName}</p>
         <p class="mt-2 slide-product-price">${item.price}</p>
-        <a href="./details.html" class="view-item">View Item</a>
+        <a href=./details.html?q=${item.id} class="view-item">View Item</a>
         </div>`
     }).join('')
 }
