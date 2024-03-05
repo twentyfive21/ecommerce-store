@@ -27,7 +27,7 @@
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'ad135d37ffmshca57b4f4ff275f0p153242jsnfaf4aaf1abb9',
+            'X-RapidAPI-Key': '8d2171684amsh40c452b66155ebfp1c033ajsn3c95ae02c598',
             'X-RapidAPI-Host': 'affogato-the-ecommerce-store.p.rapidapi.com'
         }
     };
