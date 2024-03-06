@@ -36,7 +36,12 @@
     .then(res => res.json())
     .then((json) => {
         displaySingleProduct(json.item)
-       
+       const list = getLocalStorage();
+    const existingItem = list.find(item => item.id === json.item.id);
+    if (existingItem) {
+        addToCartBtn.innerText = "Update Cart";
+    }
+    
         // addToCart(json.item)
         console.log(json.item);
     })
@@ -113,7 +118,7 @@ imageThree.addEventListener('click', ()=>{
 })  
 
 addToCartBtn.addEventListener("click", ()=>{
-    addToCart(dataArray)
+    addItemToLocalStorage(dataArray)
 })
 }
 
@@ -129,12 +134,31 @@ const getLocalStorage = () => {
 // inputQuantity.addEventListener('input', (e)=>{
 //     console.log(e.target.value)
 // })
-function addToCart({id, productName, price, image}){
-    const inputNumber = inputQuantity.value;
+function addItemToLocalStorage({id, productName, price, image}) {
+    const inputNumber = parseInt(inputQuantity.value);
     const cartItem = {id, quantity: inputNumber, productName, price, image};
-    console.log(cartItem)
     let list = getLocalStorage();
-    list.push(cartItem);
+    
+    if (inputNumber === 0) {
+        // If the input quantity is zero then we need to  remove the entire product from the cart
+        const filteredList = list.filter(item => item.id !== cartItem.id);
+        list = filteredList;
+    } else {
+        // check to see  if the item already exists in the cart
+        const existingItem = list.filter(item => item.id === cartItem.id);
+
+        if (existingItem.length > 0) {
+            // Update the quantity of the existing item
+            existingItem[0].quantity = inputNumber;
+        } else {
+            // Add the new item to the cart
+            list.push(cartItem);
+        }
+    }
+    
     localStorage.setItem('cartList', JSON.stringify(list));
+    location.reload();
 }
+
+
 

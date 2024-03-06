@@ -1,6 +1,7 @@
 const subtotalBox = document.querySelector(".subtotal-amount");
 const totalBox = document.querySelector(".total-amount");
 const table = document.querySelector('.cart-main-container table');
+const shippingPrice = document.querySelector('.total-bdi');
 
 const setList = () => {
   let list = getLocalStorage();
@@ -8,7 +9,6 @@ const setList = () => {
     list.forEach(item => createItem(item))
   }
   calculateTotal(list)
-  console.log(list)
 }
 
 // load items 
@@ -31,9 +31,9 @@ const createItem = ({ id, quantity, productName, price, image }) => {
     </td>
     <td>
       <div class="item-incrementer">
-        <i class="fa-solid fa-minus"></i>
+        <i class="fa-solid"></i>
         <p>${quantity}</p>
-        <i class="fa-solid fa-plus"></i>
+        <i class="fa-solid"></i>
       </div>
     </td>
     <td class="subtotal-cart-price hide-for-mobile">
@@ -45,29 +45,55 @@ const createItem = ({ id, quantity, productName, price, image }) => {
 
   // Append the new row to the table
   table.appendChild(newRow);
+
+  // Add event listener to the delete button
+  const deleteButton = newRow.querySelector('.delete-button button');
+  deleteButton.addEventListener('click', () => {
+    // Get the ID of the item to be removed
+    const itemId = id;
+    // Remove the item from local storage
+    removeItemFromLocalStorage(itemId);
+    // Remove the corresponding row from the table
+    newRow.remove();
+    // Recalculate the total
+    calculateTotal(getLocalStorage());
+  });
 }
-
-
 
 const getLocalStorage = () => {
-      // Check if 'cartList' item exists in local storage
-   // If it exists, parse and return the data else return empty []
-   return localStorage.getItem('cartList')
-   ? JSON.parse(localStorage.getItem('cartList'))
-   : [];
+  // Check if 'cartList' item exists in local storage
+  // If it exists, parse and return the data else return empty []
+  return localStorage.getItem('cartList')
+    ? JSON.parse(localStorage.getItem('cartList'))
+    : [];
 }
 
-const calculateTotal = (item) => {
-    let subtotal = 0;
-    const shipping = 12.99;
-    let total = 0;
+const removeItemFromLocalStorage = (itemId) => {
+  let list = getLocalStorage();
+  // Filter out the item with the given ID
+  list = list.filter(item => item.id !== itemId);
+  // Update the local storage
+  localStorage.setItem('cartList', JSON.stringify(list));
+}
 
-    for(let i = 0; i < item.length; i++){
-        subtotal += (item[i].price.slice(1) * item[i].quantity);
-    }
 
-    total = subtotal + shipping;
-    subtotalBox.innerText = "$" + subtotal;
-    totalBox.innerText = "$" + total;
+const calculateTotal = (itemArray) => {
+  let subtotal = 0;
+  let total = 0;
+  let shipping = 0.00;
+ 
 
+  for (let i = 0; i < itemArray.length; i++) {
+    subtotal += (itemArray[i].price.slice(1) * itemArray[i].quantity);
+  }
+
+   if(subtotal === 0){
+    shipping = 0.00;
+  }else{
+    shipping = 12.99;
+  }
+  shippingPrice.innerText = "$" + shipping.toFixed(2);
+  total = subtotal + shipping;
+  subtotalBox.innerText = "$" + subtotal.toFixed(2);
+  totalBox.innerText = "$" + total.toFixed(2);
 }
