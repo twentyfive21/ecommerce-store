@@ -7,12 +7,44 @@ const setList = () => {
   let list = getLocalStorage();
   if (list.length > 0) {
     list.forEach(item => createItem(item))
+  }else{
+    createNullItem();
   }
   calculateTotal(list)
 }
 
 // load items 
 window.addEventListener('DOMContentLoaded', setList);
+
+const createNullItem = () =>{
+    const newRow = document.createElement('tr');
+  newRow.classList.add('single-cart-item');
+
+  newRow.innerHTML = `<tr class="single-cart-item">
+        <td class="cart-item-left">
+          <img src="https://media.istockphoto.com/id/463813709/photo/white-shopping-bag.jpg?s=612x612&w=0&k=20&c=DcY_HvHi6uFeEvNskyFIWjyJ5uD01PP4Hrp7DrsIwrY=" alt="necklace"/>
+          <div class="cart-item-detail">
+            <h2>No items added</h2>
+            <p></p>
+          </div>
+        </td>
+        <td>
+          <div class="item-incrementer">
+            <i class="fa-solid"></i>
+            <p>0</p>
+            <i class="fa-solid"></i>
+          </div>
+        </td>
+        <td class="subtotal-cart-price hide-for-mobile">
+          $0
+        </td>
+        <td class="delete-button">
+          <button>X</button>
+        </td>
+      </tr>`
+
+    table.appendChild(newRow);
+}
 
 const createItem = ({ id, quantity, productName, price, image }) => {
 
@@ -73,6 +105,12 @@ const removeItemFromLocalStorage = (itemId) => {
   // Filter out the item with the given ID
   list = list.filter(item => item.id !== itemId);
   // Update the local storage
+  localStorage.setItem('cartList', JSON.stringify(list));
+}
+
+const clearLocalStorage = () => {
+  let list = getLocalStorage();
+  list = [];
   localStorage.setItem('cartList', JSON.stringify(list));
 }
 
