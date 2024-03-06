@@ -874,11 +874,17 @@ color: var(--e-gray);
 }
 /** Slider Section **/
 /*slider's layout based on the viewport width */
+@media (max-width: 1210px) {
+  .slide-product-text {
+  font-size: 20px;
+}
+}
 /* For screens with a maximum width of 1024 pixels */
 @media (max-width: 1024px) {
   .slide {
     flex: 0 0 100%; /* Set each slide to take up the full width */
   }
+
 }
 
 /* For screens with a maximum width of 767 pixels */
