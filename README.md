@@ -1,6 +1,6 @@
 # E-commerce Website with JavaScript & Bootstrap
 --- 
-## View the site live here : 
+## View the site live here : [Here](https://shopethereal.netlify.app/)
 
 # Learning Outcome 
 * This collaborative project aims to enhance our proficiency in JavaScript, particularly in DOM manipulation, and to reinforce our skills in utilizing Bootstrap for responsive and visually appealing web design. As part of our review, we will create an e-commerce site. 
