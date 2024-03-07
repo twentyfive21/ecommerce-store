@@ -65,11 +65,10 @@
     }).join(""); 
         productIdNumber.innerText = dataArray.id;
         productCategoryName.innerText = dataArray.category;
-        productTagsNameContainer.innerHTML = dataArray.occasion.map(element => {
-        return `<li data-value="S" class="select-item">
-                      <a href="#" class="text-decoration-none">${element}</a>,
-                    </li>`;
-    }).join(" "); 
+     productTagsNameContainer.innerHTML = `<li data-value="S" class="select-item">
+    <a href="#" class="text-decoration-none">${dataArray.occasion[0]}</a>
+</li>`;
+
     tabsProductDes.innerText = dataArray.description;
     tabsProductTagsContainer.innerHTML = dataArray.occasion.map(element => {
         return `<li>${element}</li>`;
