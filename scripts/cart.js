@@ -57,10 +57,12 @@ const createItem = ({ id, quantity, productName, price, image }) => {
   newRow.innerHTML = `
     <td class="cart-item-left">
       <img src="${image[0]}" alt="necklace"/>
-      <div class="cart-item-detail">
-        <h2>${productName}</h2>
-        <p>${price}</p>
-      </div>
+      <a href="details.html?q=${id}" class="text-decoration-none">
+  <div class="cart-item-detail">
+    <h2>${productName}</h2>
+    <p>${price}</p>
+  </div>
+</a>
     </td>
     <td>
       <div class="item-incrementer">
