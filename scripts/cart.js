@@ -2,6 +2,7 @@ const subtotalBox = document.querySelector(".subtotal-amount");
 const totalBox = document.querySelector(".total-amount");
 const table = document.querySelector('.cart-main-container table');
 const shippingPrice = document.querySelector('.total-bdi');
+const checkoutBtn = document.querySelector('.checkout-btn-brown');
 
 const setList = () => {
   let list = getLocalStorage();
@@ -15,10 +16,12 @@ const setList = () => {
 
 // load items 
 window.addEventListener('DOMContentLoaded', setList);
+checkoutBtn.addEventListener('click', ()=>{
+  clearLocalStorage();
+})
 
 const createNullItem = () =>{
-    const newRow = document.createElement('tr');
-  newRow.classList.add('single-cart-item');
+  const newRow = document.createElement('tr');
 
   newRow.innerHTML = `<tr class="single-cart-item">
         <td class="cart-item-left">
@@ -38,9 +41,7 @@ const createNullItem = () =>{
         <td class="subtotal-cart-price hide-for-mobile">
           $0
         </td>
-        <td class="delete-button">
-          <button>X</button>
-        </td>
+        
       </tr>`
 
     table.appendChild(newRow);
@@ -89,6 +90,7 @@ const createItem = ({ id, quantity, productName, price, image }) => {
     newRow.remove();
     // Recalculate the total
     calculateTotal(getLocalStorage());
+    location.reload();
   });
 }
 
@@ -135,3 +137,21 @@ const calculateTotal = (itemArray) => {
   subtotalBox.innerText = "$" + subtotal.toFixed(2);
   totalBox.innerText = "$" + total.toFixed(2);
 }
+
+// *** Confetti function ***
+const canvas = document.querySelector(".canvas");
+
+const jsConfetti = new JSConfetti();
+
+checkoutBtn.addEventListener("click", () => {
+  jsConfetti.addConfetti({
+    confettiRadius: 5,
+    confettiNumber: 500,
+    confettiColors: [
+    "#151412",
+    "#fff674",
+    "#ffbec2",
+    "#c8d6ff"
+    ],
+  });
+});
