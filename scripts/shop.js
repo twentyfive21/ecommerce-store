@@ -83,7 +83,7 @@ const displaySelectedCategory = (category) => {
         selected = '';
     } else if (category == 'Shoes') {
         selected = '/category/shoes'
-    } else if (category == "Jewerly") {
+    } else if (category == "Jewelry") {
         selected = '/category/Jewelry'
     }
 

@@ -96,7 +96,7 @@
                                   <i class="fa fa-star" aria-hidden="true"></i>
                                   <i class="fa fa-star" aria-hidden="true"></i>
                                   <i class="fa fa-star" aria-hidden="true"></i>
-                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star-o" aria-hidden="true"></i>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                   <p>${item.customerReview}

@@ -30,6 +30,24 @@ const displaySlider = (data) => {
     }).join('')
 }
 
+window.addEventListener('DOMContentLoaded', function () {
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide-single-hero');
+    
+    function showSlides() {
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        slides[slideIndex - 1].style.display = 'block';  
+        setTimeout(showSlides, 2000); // Change slide every 2 seconds (2000 milliseconds)
+    }
+    
+    showSlides();
+});
+
+
 // Wrap the code in an Immediately Invoked Function Expression (IIFE) to avoid polluting the global namespace.
 (function() {
     // Get a reference to the slider element from the DOM using its ID.
